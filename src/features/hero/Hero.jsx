@@ -101,6 +101,7 @@ export default function Hero() {
               aria-label="Aulas infantis de jiu-jitsu na BTT Porto Seguro"
             />
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 z-[2] h-1/2 bg-gradient-to-b from-transparent via-[#0f0f12]/70 to-[#0f0f12]" aria-hidden="true" />
 
           </div>
         </div>
@@ -113,6 +114,7 @@ export default function Hero() {
               <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:min-h-0 max-sm:flex-[1_1_100%] max-sm:bg-top" style={{ backgroundImage: 'url(/hero-kids-2.jpg)' }} aria-hidden="true" />
             </div>
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 z-[2] h-1/2 bg-gradient-to-b from-transparent via-[#0f0f12]/70 to-[#0f0f12]" aria-hidden="true" />
 
           </div>
         </div>
@@ -132,6 +134,7 @@ export default function Hero() {
               </picture>
             </div>
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 z-[2] h-1/2 bg-gradient-to-b from-transparent via-[#0f0f12]/70 to-[#0f0f12]" aria-hidden="true" />
 
           </div>
         </div>
