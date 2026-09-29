@@ -133,8 +133,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Subtle bottom shadow — soft separation, no gray tint */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[2] h-24 bg-gradient-to-t from-black/40 via-black/10 to-transparent" aria-hidden="true" />
+        {/* Soft bottom fade — blends hero images into the page background */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[2] h-32 bg-gradient-to-b from-transparent to-background" aria-hidden="true" />
 
         {/* Fixed content layer */}
         <div className="absolute inset-0 z-[3] max-w-full overflow-hidden">
