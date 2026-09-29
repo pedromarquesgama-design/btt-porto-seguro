@@ -121,7 +121,7 @@ export default function TestimonialsMarquee() {
   }
 
   return (
-    <section className="relative z-[3] -mt-10 bg-transparent pb-6 text-foreground sm:-mt-14 sm:pb-8" aria-label="Depoimentos de alunos">
+    <section className="relative z-[3] bg-transparent pb-6 pt-6 text-foreground sm:pb-8" aria-label="Depoimentos de alunos">
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <div
           ref={viewportRef}
