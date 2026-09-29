@@ -189,8 +189,6 @@ export default function Hero() {
       <button onClick={next} className="absolute top-1/2 z-[4] hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/35 bg-black/45 text-white backdrop-blur-sm transition-all hover:scale-105 hover:border-primary hover:bg-primary sm:flex right-4" aria-label="Próximo slide">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="h-[22px] w-[22px]" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
       </button>
-
-      {/* bottom fade removed — no shadow band over hero images */}
     </section>
   )
 }
