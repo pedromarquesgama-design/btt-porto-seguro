@@ -98,6 +98,14 @@ body {
   opacity: 1;
 }
 
+/* True alpha fade on hero image wrappers — melts the photo itself to
+   transparent over the bottom 40%, so no hard baseline can show
+   regardless of section background behind it. */
+.hero-slide-inner > [role="img"] {
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
 /* Fixed content layer crossfade */
 .hero-content-panel {
   position: absolute;
