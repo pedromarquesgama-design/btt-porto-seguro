@@ -100,7 +100,7 @@ export default function Hero() {
               role="img"
               aria-label="Aulas infantis de jiu-jitsu na BTT Porto Seguro"
             />
-            <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/90 via-black/70 to-black/50" />
+            <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
           </div>
         </div>
 
@@ -111,7 +111,7 @@ export default function Hero() {
               <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:hidden" style={{ backgroundImage: 'url(/hero-kids-3.jpg)', backgroundSize: '100% 100%' }} aria-hidden="true" />
               <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:min-h-0 max-sm:flex-[1_1_100%] max-sm:bg-top" style={{ backgroundImage: 'url(/hero-kids-2.jpg)' }} aria-hidden="true" />
             </div>
-            <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/90 via-black/70 to-black/50" />
+            <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
           </div>
         </div>
 
@@ -129,7 +129,7 @@ export default function Hero() {
                 <img src="/master-solo.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover object-[center_top] max-sm:object-contain max-sm:object-[center_top]" />
               </picture>
             </div>
-            <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/90 via-black/70 to-black/50" />
+            <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
           </div>
         </div>
 
@@ -187,7 +187,7 @@ export default function Hero() {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="h-[22px] w-[22px]" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
       </button>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[2] h-[120px] bg-gradient-to-b from-transparent to-background" aria-hidden="true" />
+      {/* bottom fade removed — no shadow band over hero images */}
     </section>
   )
 }
