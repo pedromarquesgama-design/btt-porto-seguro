@@ -133,6 +133,9 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Subtle bottom shadow — soft separation, no gray tint */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[2] h-24 bg-gradient-to-t from-black/40 via-black/10 to-transparent" aria-hidden="true" />
+
         {/* Fixed content layer */}
         <div className="absolute inset-0 z-[3] max-w-full overflow-hidden">
           <div className={`container hero-content-panel mx-auto w-full max-w-[1200px] px-4 pt-8 pb-8 ${!isMaster ? 'is-active' : ''}`}>
