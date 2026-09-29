@@ -122,6 +122,8 @@ export default function TestimonialsMarquee() {
 
   return (
     <section className="relative z-[3] bg-transparent pb-6 pt-6 text-foreground sm:pb-8" aria-label="Depoimentos de alunos">
+      {/* Top fade — blends the comments section into the hero above */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-background to-transparent" aria-hidden="true" />
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <div
           ref={viewportRef}
