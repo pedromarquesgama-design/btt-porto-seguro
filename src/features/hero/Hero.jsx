@@ -95,7 +95,7 @@ export default function Hero() {
         <div className={`hero-slide ${current === 0 ? 'is-active' : ''} ${prev === 0 ? 'is-prev' : ''}`} role="group" aria-label="Slide 1 de 3">
           <div className="hero-slide-inner">
             <div
-              className="absolute inset-0 bg-[#1a1a1a] bg-cover bg-center bg-no-repeat max-sm:bg-contain max-sm:bg-top max-sm:bg-[#0F0F12]"
+              className="absolute inset-0 bg-[#1a1a1a] bg-cover bg-center bg-no-repeat max-sm:bg-cover max-sm:bg-top"
               style={{ backgroundImage: 'url(/hero-kids-1.jpg)' }}
               role="img"
               aria-label="Aulas infantis de jiu-jitsu na BTT Porto Seguro"
@@ -121,14 +121,14 @@ export default function Hero() {
         <div className={`hero-slide ${current === 2 ? 'is-active' : ''} ${prev === 2 ? 'is-prev' : ''}`} role="group" aria-label="Slide 3 de 3">
           <div className="hero-slide-inner">
             <div
-              className="absolute inset-0 bg-[#1a1a1a] bg-cover bg-no-repeat max-sm:bg-contain max-sm:bg-top max-sm:bg-[#0F0F12] min-[480px]:max-md:bg-[position:72%_top] max-sm:bg-[position:center_top] bg-[position:center_top]"
+              className="absolute inset-0 bg-[#1a1a1a] bg-cover bg-no-repeat max-sm:bg-cover max-sm:bg-top min-[480px]:max-md:bg-[position:72%_top] max-sm:bg-[position:center_top] bg-[position:center_top]"
               style={{ backgroundImage: undefined }}
               role="img"
               aria-label="Mestre Eliandro Rodrigues, fundador da BTT Porto Seguro"
             >
               <picture>
                 <source media="(max-width: 767px)" srcSet="/master-solo-mobile.jpg" />
-                <img src="/master-solo.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover object-[center_top] max-sm:object-contain max-sm:object-[center_top]" />
+                <img src="/master-solo.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover object-[center_top] max-sm:object-cover max-sm:object-[center_top]" />
               </picture>
             </div>
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
