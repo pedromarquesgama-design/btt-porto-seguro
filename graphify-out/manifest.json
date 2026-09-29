@@ -1,0 +1,224 @@
+{
+  "package.json": {
+    "mtime": 1790599771.7977736,
+    "seen": 1790624422.5614634,
+    "ast_hash": "78d99ce48945e7d2b7523350deda8fbf",
+    "semantic_hash": "78d99ce48945e7d2b7523350deda8fbf"
+  },
+  "src/App.jsx": {
+    "mtime": 1790604450.3997738,
+    "seen": 1790624422.5614743,
+    "ast_hash": "8589e038ca0145e9725c2ac0db5aad87",
+    "semantic_hash": "8589e038ca0145e9725c2ac0db5aad87"
+  },
+  "src/components/layout/Footer.jsx": {
+    "mtime": 1790599827.9308207,
+    "seen": 1790624422.561479,
+    "ast_hash": "36652a0643b5e01d97714095f9bff857",
+    "semantic_hash": "36652a0643b5e01d97714095f9bff857"
+  },
+  "src/components/layout/Navbar.jsx": {
+    "mtime": 1790599827.9303787,
+    "seen": 1790624422.5614822,
+    "ast_hash": "961b398dfb2161427f91453300fc1d09",
+    "semantic_hash": "961b398dfb2161427f91453300fc1d09"
+  },
+  "src/components/layout/SectionDivider.jsx": {
+    "mtime": 1790599827.9318206,
+    "seen": 1790624422.561485,
+    "ast_hash": "226f1afe5370124e8ed43852f4d27178",
+    "semantic_hash": "226f1afe5370124e8ed43852f4d27178"
+  },
+  "src/components/ui/Button.jsx": {
+    "mtime": 1790599811.2038066,
+    "seen": 1790624422.5614884,
+    "ast_hash": "4bc3b48ce095a6d759c390f672e6a450",
+    "semantic_hash": "4bc3b48ce095a6d759c390f672e6a450"
+  },
+  "src/components/ui/SectionHeading.jsx": {
+    "mtime": 1790599811.2048066,
+    "seen": 1790624422.5614917,
+    "ast_hash": "c1b38b57463726966e5abb2d4e7acd05",
+    "semantic_hash": "c1b38b57463726966e5abb2d4e7acd05"
+  },
+  "src/components/ui/TestimonialCard.jsx": {
+    "mtime": 1790599811.2058432,
+    "seen": 1790624422.5614946,
+    "ast_hash": "aab79213478a4b2d0ea60a552f424190",
+    "semantic_hash": "aab79213478a4b2d0ea60a552f424190"
+  },
+  "src/components/ui/WhatsAppCTA.jsx": {
+    "mtime": 1790623124.7275963,
+    "seen": 1790624422.5614967,
+    "ast_hash": "b7a0d40e4d14e37f3d70cecf430f8ff2",
+    "semantic_hash": "b7a0d40e4d14e37f3d70cecf430f8ff2"
+  },
+  "src/data/site.js": {
+    "mtime": 1790601288.4170156,
+    "seen": 1790624422.5614996,
+    "ast_hash": "9443745e2dba70c76ab310738f9a7b82",
+    "semantic_hash": "9443745e2dba70c76ab310738f9a7b82"
+  },
+  "src/features/about/About.jsx": {
+    "mtime": 1790599860.428848,
+    "seen": 1790624422.5615025,
+    "ast_hash": "9d9e828117bf7b858c30cf3697ce2d5a",
+    "semantic_hash": "9d9e828117bf7b858c30cf3697ce2d5a"
+  },
+  "src/features/classes/Classes.jsx": {
+    "mtime": 1790623160.9227448,
+    "seen": 1790624422.561506,
+    "ast_hash": "8ca20fa1b073a407433efa7c77b95b81",
+    "semantic_hash": "8ca20fa1b073a407433efa7c77b95b81"
+  },
+  "src/features/contact/Contact.jsx": {
+    "mtime": 1790599905.8508863,
+    "seen": 1790624422.561509,
+    "ast_hash": "4274a90bf3ec16393412d5f1064fb811",
+    "semantic_hash": "4274a90bf3ec16393412d5f1064fb811"
+  },
+  "src/features/faq/Faq.jsx": {
+    "mtime": 1790601287.977015,
+    "seen": 1790624422.5615118,
+    "ast_hash": "3c04333accd893e018829a8c0975f178",
+    "semantic_hash": "3c04333accd893e018829a8c0975f178"
+  },
+  "src/features/hero/Hero.jsx": {
+    "mtime": 1790600467.4313588,
+    "seen": 1790624422.5615149,
+    "ast_hash": "246d76ea903b5f633811e7bfd9ddc0a9",
+    "semantic_hash": "246d76ea903b5f633811e7bfd9ddc0a9"
+  },
+  "src/features/schedule/Schedule.jsx": {
+    "mtime": 1790599880.9918654,
+    "seen": 1790624422.5615182,
+    "ast_hash": "d1179bf9406eec1b274a348446b00315",
+    "semantic_hash": "d1179bf9406eec1b274a348446b00315"
+  },
+  "src/features/testimonials/TestimonialsMarquee.jsx": {
+    "mtime": 1790599860.427848,
+    "seen": 1790624422.5615208,
+    "ast_hash": "144dd4df53afc50b077b33258c0bad20",
+    "semantic_hash": "144dd4df53afc50b077b33258c0bad20"
+  },
+  "src/features/tradition/Tradition.jsx": {
+    "mtime": 1790599880.7798653,
+    "seen": 1790624422.5615237,
+    "ast_hash": "15a37bea0deacf6da0d7c0f866fd5adc",
+    "semantic_hash": "15a37bea0deacf6da0d7c0f866fd5adc"
+  },
+  "src/features/whatsapp/WhatsAppPreview.jsx": {
+    "mtime": 1790603870.1184125,
+    "seen": 1790624422.5615265,
+    "ast_hash": "0e3c3871d1d136cc3f11b7ff2a399e9f",
+    "semantic_hash": "0e3c3871d1d136cc3f11b7ff2a399e9f"
+  },
+  "src/main.jsx": {
+    "mtime": 1790599909.6168895,
+    "seen": 1790624422.5615296,
+    "ast_hash": "54a301507dcdfccf4e5565754374b5dc",
+    "semantic_hash": "54a301507dcdfccf4e5565754374b5dc"
+  },
+  "vite.config.js": {
+    "mtime": 1790599771.8017735,
+    "seen": 1790624422.5615327,
+    "ast_hash": "60b22c6831f3f0493394a9ffb67a7852",
+    "semantic_hash": "60b22c6831f3f0493394a9ffb67a7852"
+  },
+  "index.html": {
+    "mtime": 1790599771.9617736,
+    "seen": 1790624422.5615358,
+    "ast_hash": "995c03eff418ffcf90d24a1546028052",
+    "semantic_hash": "995c03eff418ffcf90d24a1546028052"
+  },
+  "public/btt-logo.png": {
+    "mtime": 1790599762.637766,
+    "seen": 1790624422.5615396,
+    "ast_hash": "fe42aa666ff870f68f41fe6aeb40c380",
+    "semantic_hash": "fe42aa666ff870f68f41fe6aeb40c380"
+  },
+  "public/foto-academia.jpg": {
+    "mtime": 1790599762.758766,
+    "seen": 1790624422.5615425,
+    "ast_hash": "b0f5753de63f06fe9a66ff300523204a",
+    "semantic_hash": "b0f5753de63f06fe9a66ff300523204a"
+  },
+  "public/hero-kids-1.jpg": {
+    "mtime": 1790599762.780766,
+    "seen": 1790624422.5615451,
+    "ast_hash": "1b506d726438b49023e1ce58fd34e732",
+    "semantic_hash": "1b506d726438b49023e1ce58fd34e732"
+  },
+  "public/hero-kids-2.jpg": {
+    "mtime": 1790599762.7957659,
+    "seen": 1790624422.5615485,
+    "ast_hash": "40287aa299d8decd3c781083a89f392a",
+    "semantic_hash": "40287aa299d8decd3c781083a89f392a"
+  },
+  "public/hero-kids-3.jpg": {
+    "mtime": 1790599762.864766,
+    "seen": 1790624422.561551,
+    "ast_hash": "63ddf283fb95fba51d8890bc0eb26ac4",
+    "semantic_hash": "63ddf283fb95fba51d8890bc0eb26ac4"
+  },
+  "public/hero-masters.jpg": {
+    "mtime": 1790599762.883766,
+    "seen": 1790624422.561554,
+    "ast_hash": "a41049b053c5cddbc2e0172d9b09ec26",
+    "semantic_hash": "a41049b053c5cddbc2e0172d9b09ec26"
+  },
+  "public/hero-murilo.jpg": {
+    "mtime": 1790599762.944766,
+    "seen": 1790624422.5615568,
+    "ast_hash": "b940c84977f8f3e44372c279039b37e4",
+    "semantic_hash": "b940c84977f8f3e44372c279039b37e4"
+  },
+  "public/hero-popo.jpg": {
+    "mtime": 1790599763.0247662,
+    "seen": 1790624422.5615594,
+    "ast_hash": "a15369d8c7155f8a2b2e5d1973416a7c",
+    "semantic_hash": "a15369d8c7155f8a2b2e5d1973416a7c"
+  },
+  "public/master-solo-mobile.jpg": {
+    "mtime": 1790599763.0447662,
+    "seen": 1790624422.5615628,
+    "ast_hash": "4aabffb88f47f25689aba222065380b5",
+    "semantic_hash": "4aabffb88f47f25689aba222065380b5"
+  },
+  "public/master-solo.jpg": {
+    "mtime": 1790599763.1037662,
+    "seen": 1790624422.5615659,
+    "ast_hash": "019fe54e14253c28e82ca71f0c0e089f",
+    "semantic_hash": "019fe54e14253c28e82ca71f0c0e089f"
+  },
+  "public/mestre-eliandro.jpg": {
+    "mtime": 1790599763.1647663,
+    "seen": 1790624422.5615687,
+    "ast_hash": "d643c00b9ae5785d347d346f0e1af9b0",
+    "semantic_hash": "d643c00b9ae5785d347d346f0e1af9b0"
+  },
+  "public/modalidade-boxe.jpg": {
+    "mtime": 1790599763.1747663,
+    "seen": 1790624422.5615716,
+    "ast_hash": "aa9b5e0f7fb2e030af496b052282dc66",
+    "semantic_hash": "aa9b5e0f7fb2e030af496b052282dc66"
+  },
+  "public/modalidade-jiu-jitsu-infantil.jpg": {
+    "mtime": 1790599763.2047663,
+    "seen": 1790624422.561575,
+    "ast_hash": "2d1253989799d56dceaa310b7cc736a1",
+    "semantic_hash": "2d1253989799d56dceaa310b7cc736a1"
+  },
+  "public/modalidade-jiu-jitsu.jpg": {
+    "mtime": 1790599763.2307663,
+    "seen": 1790624422.5615776,
+    "ast_hash": "fcfe4001adb6ab7abaee439a60c490d2",
+    "semantic_hash": "fcfe4001adb6ab7abaee439a60c490d2"
+  },
+  "public/modalidade-mma.jpg": {
+    "mtime": 1790599763.2417662,
+    "seen": 1790624422.5615802,
+    "ast_hash": "bec56338f6b9990fc61ff5d715a56065",
+    "semantic_hash": "bec56338f6b9990fc61ff5d715a56065"
+  }
+}
