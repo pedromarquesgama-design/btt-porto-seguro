@@ -74,11 +74,11 @@ export default function Hero() {
   const isMaster = current === SLIDES.length - 1
 
   return (
-    <section id="home" className="relative block overflow-hidden pt-16 max-sm:pt-14" aria-label="Banner principal">
+    <section id="home" className="relative block h-full overflow-hidden" aria-label="Banner principal">
       <div
         ref={sliderRef}
         aria-live="polite"
-        className="relative left-0 right-0 top-0 aspect-[2976/1430] min-h-[560px] max-w-full overflow-hidden max-sm:min-h-[min(520px,calc(100svh-56px))]"
+        className="relative h-full w-full overflow-hidden"
         onTouchStart={(e) => {
           if (e.touches.length === 1) touchStartX.current = e.touches[0].clientX
         }}
