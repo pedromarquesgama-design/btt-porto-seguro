@@ -47,7 +47,7 @@ export default function About() {
           <ScrollReveal direction="up" delay={200}>
             <div className="relative">
               <img
-                src="/foto-academia.jpg"
+                src="/foto-academia.webp"
                 alt="Academia BTT Porto Seguro"
                 loading="lazy"
                 className="block aspect-[4/3] min-h-[240px] w-full rounded-lg border border-border object-cover"

@@ -29,7 +29,7 @@ export default function BeltDivider({ className = '' }) {
       {/* Reserves vertical space. Aspect ratio mirrors the asset (1400x400 = 7:2). */}
       <div aria-hidden="true" className="block w-full aspect-[7/2]" />
       <img
-        src="/belt-btt.png"
+        src="/belt-btt.webp"
         alt=""
         loading="lazy"
         decoding="async"

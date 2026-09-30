@@ -32,7 +32,7 @@ export const MASTERS = [
     id: 'murilo',
     eyebrow: 'Fundador e líder da Brazilian Top Team',
     name: ['Murilo', 'Bustamante'],
-    image: '/hero-murilo.jpg',
+    image: '/hero-murilo.webp',
     alt: 'Murilo Bustamante',
     description:
       'Co-fundador e atual líder do Brazilian Top Team (BTT), fundado em 2000 ao lado de Ricardo Libório, Mário Sperry e Luis Roberto Duarte. Primeiro brasileiro a conquistar um título do UFC — Campeão dos Médios (UFC 35, 2002) — com a linhagem de faixa-preta vinda de Carlson Gracie. Recebeu a faixa coral (7º grau) de BJJ, em reconhecimento a décadas dedicadas ao jiu-jitsu, e já formou mais de 100 faixas-pretas ao longo da carreira.',
@@ -44,7 +44,7 @@ export const MASTERS = [
     id: 'popo',
     eyebrow: 'Fundador da rede Popó Mão de Pedra',
     name: ['Acelino', '"Popó"', 'Freitas'],
-    image: '/hero-popo.jpg',
+    image: '/hero-popo.webp',
     alt: 'Acelino Popó Freitas',
     description:
       'Tetracampeão mundial de boxe (1999, 2002, 2004 e 2006) em duas categorias — super-pena e leve — e supercampeão mundial unificado, com títulos pelas quatro principais organizações do boxe (WBO, WBA, WBC e IBF). Conhecido pelo apelido "Mão de Pedra", com uma das mais longas sequências de vitórias por nocaute consecutivas da história do boxe. Fundador da rede de academias "Popó Mão de Pedra", com unidades em diversos estados do Brasil.',
@@ -56,7 +56,7 @@ export const MASTERS = [
     id: 'eliandro',
     eyebrow: 'Quem vai te ensinar no dia a dia',
     name: ['Mestre Eliandro', 'Rodrigues'],
-    image: '/mestre-eliandro.jpg',
+    image: '/mestre-eliandro.webp',
     alt: 'Mestre Eliandro Rodrigues — Professor do dia a dia',
     description:
       'O coração da BTT Porto Seguro. As aulas são conduzidas pelo Mestre Eliandro Rodrigues, o "Eliandro Ninja" — figura conhecida na região pelo jeito mão na massa e pelo ensino estilo família, em que cada aluno é acompanhado de perto. Quando necessário, outros instrutores qualificados da equipe podem assumir as turmas no lugar dele, mas a maioria das aulas é ministrada por ele mesmo.',
@@ -68,10 +68,10 @@ export const MASTERS = [
 ]
 
 export const MODALIDADES = [
-  { title: 'Jiu-Jitsu', subtitle: 'Adulto', image: '/modalidade-jiu-jitsu.jpg', alt: 'Jiu-Jitsu Adulto', objectTop: true },
-  { title: 'Jiu-Jitsu', subtitle: 'Infantil', image: '/modalidade-jiu-jitsu-infantil.jpg', alt: 'Jiu-Jitsu Infantil', objectTop: true },
-  { title: 'Boxe', subtitle: 'Todos os níveis', image: '/modalidade-boxe.jpg', alt: 'Boxe', contain: true },
-  { title: 'MMA', subtitle: 'Mixed Martial Arts', image: '/modalidade-mma.jpg', alt: 'MMA' },
+  { title: 'Jiu-Jitsu', subtitle: 'Adulto', image: '/modalidade-jiu-jitsu.webp', alt: 'Jiu-Jitsu Adulto', objectTop: true },
+  { title: 'Jiu-Jitsu', subtitle: 'Infantil', image: '/modalidade-jiu-jitsu-infantil.webp', alt: 'Jiu-Jitsu Infantil', objectTop: true },
+  { title: 'Boxe', subtitle: 'Todos os níveis', image: '/modalidade-boxe.webp', alt: 'Boxe', contain: true },
+  { title: 'MMA', subtitle: 'Mixed Martial Arts', image: '/modalidade-mma.webp', alt: 'MMA' },
 ]
 
 export const SCHEDULE_JIUJITSU = [

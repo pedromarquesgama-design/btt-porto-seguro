@@ -136,7 +136,7 @@ export default function Hero() {
           <div className="hero-slide-inner">
             <div
               className="absolute inset-0 bg-[#1a1a1a] bg-cover bg-center bg-no-repeat max-sm:bg-cover max-sm:bg-top"
-              style={{ backgroundImage: 'url(/hero-kids-1.jpg)' }}
+              style={{ backgroundImage: 'url(/hero-kids-1.webp)' }}
               role="img"
               aria-label="Aulas infantis de jiu-jitsu na BTT Porto Seguro"
             />
@@ -149,8 +149,8 @@ export default function Hero() {
         <div className={`hero-slide ${current === 1 ? 'is-active' : ''} ${prev === 1 ? 'is-prev' : ''}`} role="group" aria-label="Slide 2 de 3">
           <div className="hero-slide-inner">
             <div className="absolute inset-0 flex flex-row overflow-hidden bg-[#1a1a1a] max-sm:flex-col max-sm:bg-[#0F0F12]" role="img" aria-label="Aulas infantis de jiu-jitsu na BTT Porto Seguro">
-              <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:hidden" style={{ backgroundImage: 'url(/hero-kids-3.jpg)', backgroundSize: '100% 100%' }} aria-hidden="true" />
-              <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:min-h-0 max-sm:flex-[1_1_100%] max-sm:bg-top" style={{ backgroundImage: 'url(/hero-kids-2.jpg)' }} aria-hidden="true" />
+              <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:hidden" style={{ backgroundImage: 'url(/hero-kids-3.webp)', backgroundSize: '100% 100%' }} aria-hidden="true" />
+              <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:min-h-0 max-sm:flex-[1_1_100%] max-sm:bg-top" style={{ backgroundImage: 'url(/hero-kids-2.webp)' }} aria-hidden="true" />
             </div>
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
 
@@ -167,8 +167,8 @@ export default function Hero() {
               aria-label="Mestre Eliandro Rodrigues, fundador da BTT Porto Seguro"
             >
               <picture>
-                <source media="(max-width: 767px)" srcSet="/master-solo-mobile.jpg" />
-                <img src="/master-solo.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover object-[center_top] max-sm:object-cover max-sm:object-[center_top]" />
+                <source media="(max-width: 767px)" srcSet="/master-solo-mobile.webp" />
+                <img src="/master-solo.webp" alt="" aria-hidden="true" className="h-full w-full object-cover object-[center_top] max-sm:object-cover max-sm:object-[center_top]" />
               </picture>
             </div>
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
@@ -178,7 +178,7 @@ export default function Hero() {
 
         {/* Fixed content layer */}
         <div ref={contentRef} className="absolute inset-0 z-[3] max-w-full overflow-hidden">
-          <div className={`container hero-content-panel mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[15vw] ${!isMaster ? 'is-active' : ''}`}>
+          <div className={`container hero-content-panel mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[12vw] ${!isMaster ? 'is-active' : ''}`}>
             <span data-parallax="-70" className="mb-6 inline-block will-change-transform border border-primary px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-primary">
               BTT Porto Seguro
             </span>
@@ -200,7 +200,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className={`container hero-content-panel hero-content-panel--master mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[17vw] ${isMaster ? 'is-active' : ''}`}>
+          <div className={`container hero-content-panel hero-content-panel--master mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[13vw] ${isMaster ? 'is-active' : ''}`}>
             <h1 data-parallax="90" className="mb-4 will-change-transform font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.25rem,8vw,4.75rem)]">
               Aprenda com
               <br />
