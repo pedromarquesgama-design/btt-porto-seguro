@@ -1,49 +1,11 @@
-import { useState } from 'react'
 import { CONTACT } from '../../data/site.js'
 import ScrollReveal from '../../components/ui/ScrollReveal.jsx'
 
-function Field({ id, label, ...props }) {
-  return (
-    <div className="mb-5">
-      <label htmlFor={id} className="mb-2 block text-sm font-semibold uppercase tracking-[0.08em] text-foreground">
-        {label}
-      </label>
-      {props.textarea ? (
-        <textarea id={id} className="min-h-[120px] w-full resize-y rounded-md border border-border bg-surface-2 px-4 py-3 font-body text-base text-foreground transition-colors placeholder:text-foreground-muted focus:border-primary focus:outline-none focus:ring-[3px] focus:ring-primary/25" {...props} />
-      ) : (
-        <input id={id} className="min-h-[44px] w-full rounded-md border border-border bg-surface-2 px-4 py-3 font-body text-base text-foreground transition-colors placeholder:text-foreground-muted focus:border-primary focus:outline-none focus:ring-[3px] focus:ring-primary/25" {...props} />
-      )}
-    </div>
-  )
-}
-
 export default function Contact() {
-  const [sent, setSent] = useState(false)
-  const [sending, setSending] = useState(false)
-  const [errors, setErrors] = useState({})
-
-  const onSubmit = (e) => {
-    e.preventDefault()
-    const data = Object.fromEntries(new FormData(e.target).entries())
-    const nextErrors = {}
-    if (!data.name?.trim()) nextErrors.name = true
-    if (!data.email?.trim()) nextErrors.email = true
-    if (!data.message?.trim()) nextErrors.message = true
-    setErrors(nextErrors)
-    if (Object.keys(nextErrors).length) return
-    setSending(true)
-    setTimeout(() => {
-      e.target.reset()
-      setSending(false)
-      setSent(true)
-      setTimeout(() => setSent(false), 5000)
-    }, 1000)
-  }
-
   return (
     <section id="contatos" className="relative overflow-hidden bg-background-alt py-16" aria-labelledby="contatos-title">
       <div className="pointer-events-none absolute -bottom-[30%] -left-[10%] h-[80%] w-1/2 bg-[radial-gradient(ellipse,rgba(220,38,38,0.12)_0%,transparent_70%)]" aria-hidden="true" />
-      <div className="mx-auto w-full max-w-[1200px] px-4">
+      <div className="mx-auto w-full max-w-[800px] px-4">
         <ScrollReveal direction="up" delay={0}>
           <h2 id="contatos-title" className="text-center font-display text-5xl uppercase tracking-[0.05em] text-foreground max-sm:text-4xl">
             Contatos
@@ -51,11 +13,10 @@ export default function Contact() {
           <p className="mb-10 mt-2 text-center text-lg text-foreground-muted max-sm:text-base">Fale conosco ou venha nos visitar</p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-          <ScrollReveal direction="up" delay={100}>
-          <div className="flex flex-col gap-6">
+        <ScrollReveal direction="up" delay={100}>
+          <div className="flex flex-col gap-6 rounded-lg border border-border bg-surface p-8 max-sm:p-6">
             <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-border bg-surface max-sm:h-10 max-sm:w-10" aria-hidden="true">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-border bg-background max-sm:h-10 max-sm:w-10" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 text-primary">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
@@ -72,7 +33,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-border bg-surface max-sm:h-10 max-sm:w-10" aria-hidden="true">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-border bg-background max-sm:h-10 max-sm:w-10" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 text-primary">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -90,7 +51,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-border bg-surface max-sm:h-10 max-sm:w-10" aria-hidden="true">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-border bg-background max-sm:h-10 max-sm:w-10" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 text-primary">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                 </svg>
@@ -109,7 +70,7 @@ export default function Contact() {
               href={`${CONTACT.whatsapp.href}?text=${encodeURIComponent('Olá! Encontrei a BTT Porto Seguro pelo site e gostaria de mais informações.')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 self-start rounded-md bg-red-600 px-6 py-4 text-base font-bold tracking-[0.05em] text-white transition-all hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-[0_4px_16px_rgba(220,38,38,0.3)] max-sm:w-full max-sm:justify-center max-sm:px-4 max-sm:py-3"
+              className="inline-flex items-center justify-center gap-3 self-stretch rounded-md bg-red-600 px-6 py-4 text-center text-base font-bold tracking-[0.05em] text-white transition-all hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-[0_4px_16px_rgba(220,38,38,0.3)] max-sm:px-4 max-sm:py-3"
               aria-label="Fale conosco pelo WhatsApp: +55 73 99991-7430"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -118,7 +79,7 @@ export default function Contact() {
               Fale pelo WhatsApp
             </a>
 
-            <div className="h-[300px] min-h-[220px] overflow-hidden rounded-lg border border-border md:h-full md:min-h-[400px]" aria-label="Mapa da localização da academia">
+            <div className="h-[300px] min-h-[260px] overflow-hidden rounded-lg border border-border" aria-label="Mapa da localização da academia">
               <iframe
                 src={CONTACT.mapEmbed}
                 loading="lazy"
@@ -131,65 +92,13 @@ export default function Contact() {
               href={CONTACT.directions}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-foreground-muted transition-colors hover:text-primary"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-foreground-muted transition-colors hover:text-primary"
               aria-label="Como chegar à BTT Porto Seguro no Google Maps"
             >
               Como chegar no Google Maps →
             </a>
           </div>
-          </ScrollReveal>
-
-          <ScrollReveal direction="up" delay={200}>
-          <div className="rounded-lg border border-border bg-surface p-8 max-sm:p-6" aria-label="Formulário de contato">
-            <h3 className="mb-6 font-display text-2xl uppercase tracking-[0.05em]">Envie sua mensagem</h3>
-            <form onSubmit={onSubmit} noValidate>
-              <Field
-                id="name"
-                name="name"
-                label="Nome completo"
-                placeholder="Seu nome"
-                autoComplete="name"
-                required
-                style={errors.name ? { borderColor: '#dc2626' } : undefined}
-                onInput={() => setErrors((e) => ({ ...e, name: undefined }))}
-              />
-              <Field
-                id="email"
-                name="email"
-                type="email"
-                label="E-mail"
-                placeholder="seu@email.com"
-                autoComplete="email"
-                required
-                style={errors.email ? { borderColor: '#dc2626' } : undefined}
-                onInput={() => setErrors((e) => ({ ...e, email: undefined }))}
-              />
-              <Field
-                id="message"
-                name="message"
-                label="Mensagem"
-                placeholder="Escreva sua mensagem..."
-                textarea
-                required
-                style={errors.message ? { borderColor: '#dc2626' } : undefined}
-                onInput={() => setErrors((e) => ({ ...e, message: undefined }))}
-              />
-              <button
-                type="submit"
-                disabled={sending}
-                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-sm border-2 border-primary bg-primary px-10 py-4 font-body text-base font-bold uppercase tracking-[0.1em] text-foreground transition-all hover:-translate-y-0.5 hover:border-primary-dark hover:bg-primary-dark disabled:opacity-70"
-              >
-                {sending ? 'Enviando...' : 'Enviar Mensagem'}
-              </button>
-            </form>
-            {sent && (
-              <div className="mt-4 rounded-md border border-green-500/30 bg-green-500/10 p-4 text-center text-sm text-green-400" role="alert">
-                Mensagem enviada com sucesso! Entraremos em contato em breve.
-              </div>
-            )}
-          </div>
-          </ScrollReveal>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   )
