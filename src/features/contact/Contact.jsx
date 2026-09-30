@@ -106,10 +106,10 @@ export default function Contact() {
             </div>
 
             <a
-              href={CONTACT.whatsapp.href}
+              href={`${CONTACT.whatsapp.href}?text=${encodeURIComponent('Olá! Encontrei a BTT Porto Seguro pelo site e gostaria de mais informações.')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 self-start rounded-md bg-[#25D366] px-6 py-4 text-base font-bold tracking-[0.05em] text-white transition-all hover:-translate-y-0.5 hover:bg-[#1DA851] hover:shadow-[0_4px_16px_rgba(37,211,102,0.3)] max-sm:w-full max-sm:justify-center max-sm:px-4 max-sm:py-3"
+              className="inline-flex items-center gap-3 self-start rounded-md bg-red-600 px-6 py-4 text-base font-bold tracking-[0.05em] text-white transition-all hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-[0_4px_16px_rgba(220,38,38,0.3)] max-sm:w-full max-sm:justify-center max-sm:px-4 max-sm:py-3"
               aria-label="Fale conosco pelo WhatsApp: +55 73 99991-7430"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

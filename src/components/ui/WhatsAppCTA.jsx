@@ -16,19 +16,19 @@ const WHATSAPP_LOGO = (
 const VARIANTS = [
   {
     label: 'Agendar aula experimental adulto',
-    message: 'Olá! Gostaria de agendar uma aula experimental para adulto na BTT Porto Seguro.',
+    message: 'Olá! Encontrei a BTT Porto Seguro pelo site e gostaria de agendar uma aula experimental para adulto.',
   },
   {
     label: 'Agendar aula experimental infantil',
-    message: 'Olá! Gostaria de agendar uma aula experimental para infantil na BTT Porto Seguro.',
+    message: 'Olá! Encontrei a BTT Porto Seguro pelo site e gostaria de agendar uma aula experimental infantil.',
   },
   {
     label: 'Agendar aula experimental de boxe',
-    message: 'Olá! Gostaria de agendar uma aula experimental de boxe na BTT Porto Seguro.',
+    message: 'Olá! Encontrei a BTT Porto Seguro pelo site e gostaria de agendar uma aula experimental de boxe.',
   },
   {
     label: 'Agendar personal MMA',
-    message: 'Olá! Gostaria de agendar um personal de MMA na BTT Porto Seguro.',
+    message: 'Olá! Encontrei a BTT Porto Seguro pelo site e gostaria de agendar um personal de MMA.',
   },
 ]
 
@@ -53,7 +53,7 @@ export default function WhatsAppCTA({ variant = 0, label, message, className = '
       rel="noopener noreferrer"
       aria-label={ariaLabel}
       className={
-        'inline-flex min-h-[3.5rem] items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#25D366] to-[#128C7E] px-4 py-3.5 text-center text-[13px] font-bold uppercase leading-snug tracking-[0.08em] text-white text-balance shadow-[0_6px_20px_rgba(37,211,102,0.35)] transition-all duration-200 hover:from-[#1DA851] hover:to-[#0e6b4a] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(37,211,102,0.45)] active:translate-y-0 active:shadow-[0_4px_16px_rgba(37,211,102,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-[#18181b] [text-shadow:0_1px_2px_rgba(0,0,0,0.35)] sm:text-sm ' +
+        'inline-flex min-h-[3.5rem] items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-4 py-3.5 text-center text-[13px] font-bold uppercase leading-snug tracking-[0.08em] text-white text-balance shadow-[0_6px_20px_rgba(220,38,38,0.35)] transition-all duration-200 hover:from-red-500 hover:to-red-600 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(220,38,38,0.45)] active:translate-y-0 active:shadow-[0_4px_16px_rgba(220,38,38,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#18181b] [text-shadow:0_1px_2px_rgba(0,0,0,0.35)] sm:text-sm ' +
         className
       }
     >
