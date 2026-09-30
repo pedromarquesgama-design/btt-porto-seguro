@@ -122,6 +122,8 @@ export default function TestimonialsMarquee() {
 
   return (
     <section className="relative z-[3] -mt-16 bg-transparent pb-6 pt-24 sm:-mt-20 sm:pt-28 text-foreground sm:pb-8" aria-label="Depoimentos de alunos">
+      {/* Haircut feathered gradient blur & fade transition at the top of the section */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-20 h-32 backdrop-blur-md [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] [mask-image:linear-gradient(to_bottom,transparent_0%,black_100%)] bg-background/30" aria-hidden="true" />
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <div
           ref={viewportRef}
