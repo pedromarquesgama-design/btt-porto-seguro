@@ -93,7 +93,7 @@ export default function Hero() {
       >
         {/* Slide 1 */}
         <div className={`hero-slide ${current === 0 ? 'is-active' : ''} ${prev === 0 ? 'is-prev' : ''}`} role="group" aria-label="Slide 1 de 3">
-          <div className="hero-slide-inner [-webkit-mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)] [mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)]">
+          <div className="hero-slide-inner">
             <div
               className="absolute inset-0 bg-[#1a1a1a] bg-cover bg-center bg-no-repeat max-sm:bg-cover max-sm:bg-top"
               style={{ backgroundImage: 'url(/hero-kids-1.jpg)' }}
@@ -107,7 +107,7 @@ export default function Hero() {
 
         {/* Slide 2 */}
         <div className={`hero-slide ${current === 1 ? 'is-active' : ''} ${prev === 1 ? 'is-prev' : ''}`} role="group" aria-label="Slide 2 de 3">
-          <div className="hero-slide-inner [-webkit-mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)] [mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)]">
+          <div className="hero-slide-inner">
             <div className="absolute inset-0 flex flex-row overflow-hidden bg-[#1a1a1a] max-sm:flex-col max-sm:bg-[#0F0F12]" role="img" aria-label="Aulas infantis de jiu-jitsu na BTT Porto Seguro">
               <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:hidden" style={{ backgroundImage: 'url(/hero-kids-3.jpg)', backgroundSize: '100% 100%' }} aria-hidden="true" />
               <div className="min-h-full min-w-0 flex-1 bg-cover bg-center bg-no-repeat max-sm:min-h-0 max-sm:flex-[1_1_100%] max-sm:bg-top" style={{ backgroundImage: 'url(/hero-kids-2.jpg)' }} aria-hidden="true" />
@@ -119,7 +119,7 @@ export default function Hero() {
 
         {/* Slide 3 */}
         <div className={`hero-slide ${current === 2 ? 'is-active' : ''} ${prev === 2 ? 'is-prev' : ''}`} role="group" aria-label="Slide 3 de 3">
-          <div className="hero-slide-inner [-webkit-mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)] [mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)]">
+          <div className="hero-slide-inner">
             <div
               className="absolute inset-0 bg-[#1a1a1a] bg-cover bg-no-repeat max-sm:bg-cover max-sm:bg-top min-[480px]:max-md:bg-[position:72%_top] max-sm:bg-[position:center_top] bg-[position:center_top]"
               style={{ backgroundImage: undefined }}
