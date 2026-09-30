@@ -1,6 +1,7 @@
 import Navbar from './components/layout/Navbar.jsx'
 import Footer from './components/layout/Footer.jsx'
 import SectionDivider from './components/layout/SectionDivider.jsx'
+import BeltDivider from './components/layout/BeltDivider.jsx'
 import Hero from './features/hero/Hero.jsx'
 import TestimonialsMarquee from './features/testimonials/TestimonialsMarquee.jsx'
 import About from './features/about/About.jsx'
@@ -16,7 +17,8 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <div className="relative z-10 bg-background pt-8 shadow-[0_-30px_60px_rgba(0,0,0,0.95)]">
+        <div className="relative z-10 bg-background">
+          <BeltDivider />
           <TestimonialsMarquee />
           <About />
           <Tradition />

@@ -178,7 +178,7 @@ export default function Hero() {
 
         {/* Fixed content layer */}
         <div ref={contentRef} className="absolute inset-0 z-[3] max-w-full overflow-hidden">
-          <div className={`container hero-content-panel mx-auto w-full max-w-[1200px] px-4 pt-8 pb-8 ${!isMaster ? 'is-active' : ''}`}>
+          <div className={`container hero-content-panel mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[15vw] ${!isMaster ? 'is-active' : ''}`}>
             <span data-parallax="-70" className="mb-6 inline-block will-change-transform border border-primary px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-primary">
               BTT Porto Seguro
             </span>
@@ -200,7 +200,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className={`container hero-content-panel hero-content-panel--master mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[calc(2rem+32px)] ${isMaster ? 'is-active' : ''}`}>
+          <div className={`container hero-content-panel hero-content-panel--master mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[17vw] ${isMaster ? 'is-active' : ''}`}>
             <h1 data-parallax="90" className="mb-4 will-change-transform font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.25rem,8vw,4.75rem)]">
               Aprenda com
               <br />
