@@ -67,11 +67,46 @@ function useHeroSlider(total) {
   return { current, prev, next: () => { stop(); next(); start() }, previous: () => { stop(); previous(); start() }, sliderRef: touchX, restart: start, stop }
 }
 
+function useHorizontalParallax(rootRef) {
+  useEffect(() => {
+    const root = rootRef.current
+    if (!root) return
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    const layers = Array.from(root.querySelectorAll('[data-parallax]'))
+    if (!layers.length) return
+
+    let raf = 0
+    const update = () => {
+      raf = 0
+      const progress = Math.min(1, Math.max(0, window.scrollY / (window.innerHeight || 1)))
+      for (const el of layers) {
+        const depth = parseFloat(el.dataset.parallax) || 0
+        el.style.transform = `translate3d(${(progress * depth).toFixed(2)}px, 0, 0)`
+      }
+    }
+    const schedule = () => {
+      if (!raf) raf = requestAnimationFrame(update)
+    }
+
+    update()
+    window.addEventListener('scroll', schedule, { passive: true })
+    window.addEventListener('resize', schedule)
+    return () => {
+      if (raf) cancelAnimationFrame(raf)
+      window.removeEventListener('scroll', schedule)
+      window.removeEventListener('resize', schedule)
+      for (const el of layers) el.style.transform = ''
+    }
+  }, [rootRef])
+}
+
 export default function Hero() {
   const { current, prev, next, previous } = useHeroSlider(SLIDES.length)
   const sliderRef = useRef(null)
+  const contentRef = useRef(null)
   const touchStartX = useRef(null)
   const isMaster = current === SLIDES.length - 1
+  useHorizontalParallax(contentRef)
 
   return (
     <section id="home" className="sticky top-0 z-0 block overflow-hidden pt-16 max-sm:pt-14" aria-label="Banner principal">
@@ -137,20 +172,20 @@ export default function Hero() {
         </div>
 
         {/* Fixed content layer */}
-        <div className="absolute inset-0 z-[3] max-w-full overflow-hidden">
+        <div ref={contentRef} className="absolute inset-0 z-[3] max-w-full overflow-hidden">
           <div className={`container hero-content-panel mx-auto w-full max-w-[1200px] px-4 pt-8 pb-8 ${!isMaster ? 'is-active' : ''}`}>
-            <span className="mb-6 inline-block border border-primary px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-primary">
+            <span data-parallax="-70" className="mb-6 inline-block will-change-transform border border-primary px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-primary">
               BTT Porto Seguro
             </span>
-            <h1 className="mb-4 font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.5rem,10vw,4.5rem)] md:text-[clamp(4rem,7vw,5.5rem)] xl:text-[clamp(4.5rem,6vw,6.5rem)]">
+            <h1 data-parallax="90" className="mb-4 will-change-transform font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.5rem,10vw,4.5rem)] md:text-[clamp(4rem,7vw,5.5rem)] xl:text-[clamp(4.5rem,6vw,6.5rem)]">
               Aulas
               <br />
               <span className="text-primary">Infantis</span>
             </h1>
-            <p className="mb-8 max-w-[480px] text-xl font-semibold text-white max-sm:max-w-full max-sm:text-base">
+            <p data-parallax="-45" className="mb-8 max-w-[480px] will-change-transform text-xl font-semibold text-white max-sm:max-w-full max-sm:text-base">
               Disciplina, Saúde e diversão para os pequenos! Aulas desenvolvidas para crianças a partir de 5 anos de idade.
             </p>
-            <div className="flex flex-wrap gap-4 max-sm:w-full max-sm:flex-col max-sm:items-stretch">
+            <div data-parallax="60" className="flex will-change-transform flex-wrap gap-4 max-sm:w-full max-sm:flex-col max-sm:items-stretch">
               <Button href="#contatos" size="lg" className="max-sm:w-full">
                 Junte-se a Nós
               </Button>
@@ -161,17 +196,17 @@ export default function Hero() {
           </div>
 
           <div className={`container hero-content-panel hero-content-panel--master mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[calc(2rem+32px)] ${isMaster ? 'is-active' : ''}`}>
-            <h1 className="mb-4 font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.25rem,8vw,4.75rem)]">
+            <h1 data-parallax="90" className="mb-4 will-change-transform font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.25rem,8vw,4.75rem)]">
               Aprenda com
               <br />
               os Melhores
               <br />
               <span className="text-primary">Mestres</span>
             </h1>
-            <p className="mb-8 max-w-[480px] text-xl font-semibold text-white max-sm:max-w-full max-sm:text-base">
+            <p data-parallax="-45" className="mb-8 max-w-[480px] will-change-transform text-xl font-semibold text-white max-sm:max-w-full max-sm:text-base">
               Supere seus limites, desenvolva sua técnica e seja parte de uma equipe vencedora.
             </p>
-            <div className="flex flex-wrap gap-4 max-sm:w-full max-sm:flex-col max-sm:items-stretch">
+            <div data-parallax="60" className="flex will-change-transform flex-wrap gap-4 max-sm:w-full max-sm:flex-col max-sm:items-stretch">
               <Button href="#contatos" size="lg" className="max-sm:w-full">
                 Junte-se a Nós
               </Button>
