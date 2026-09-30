@@ -53,12 +53,25 @@ export default function WhatsAppCTA({ variant = 0, label, message, className = '
       rel="noopener noreferrer"
       aria-label={ariaLabel}
       className={
-        'inline-flex min-h-[3.5rem] items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-4 py-3.5 text-center text-[13px] font-bold uppercase leading-snug tracking-[0.08em] text-white text-balance shadow-[0_6px_20px_rgba(220,38,38,0.35)] transition-all duration-200 hover:from-red-500 hover:to-red-600 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(220,38,38,0.45)] active:translate-y-0 active:shadow-[0_4px_16px_rgba(220,38,38,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#18181b] [text-shadow:0_1px_2px_rgba(0,0,0,0.35)] sm:text-sm ' +
+        'group relative inline-flex min-h-[3.25rem] select-none items-center justify-center gap-2 overflow-hidden rounded-md ' +
+        'border border-white/10 bg-gradient-to-b from-red-500 via-red-600 to-red-700 px-4 py-3.5 text-center text-[13px] font-bold uppercase leading-snug tracking-[0.08em] text-white text-balance sm:text-sm ' +
+        'shadow-[0_2px_0_0_#7f1d1d,0_10px_20px_-8px_rgba(220,38,38,0.7)] ' +
+        'transition-[transform,box-shadow,background-color] duration-200 ease-out ' +
+        'hover:from-red-400 hover:via-red-500 hover:to-red-600 ' +
+        'hover:shadow-[0_3px_0_0_#7f1d1d,0_16px_28px_-8px_rgba(220,38,38,0.85)] ' +
+        'active:translate-y-[3px] active:shadow-[0_0_0_0_#7f1d1d,0_6px_12px_-6px_rgba(220,38,38,0.6)] ' +
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#18181b] ' +
+        'motion-reduce:transform-none motion-reduce:transition-none ' +
         className
       }
     >
-      {WHATSAPP_LOGO}
-      <span>{finalLabel}</span>
+      <span aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/25 to-transparent" />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute -inset-y-4 -left-1/3 w-1/3 -skew-x-12 bg-white/25 opacity-0 transition-[left,opacity] duration-500 ease-out group-hover:left-[115%] group-hover:opacity-100 motion-reduce:hidden"
+      />
+      <span className="relative shrink-0">{WHATSAPP_LOGO}</span>
+      <span className="relative">{finalLabel}</span>
     </a>
   )
 }
