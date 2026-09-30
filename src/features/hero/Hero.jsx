@@ -102,6 +102,7 @@ export default function Hero() {
             />
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 z-[2] h-1/2 bg-gradient-to-b from-transparent via-[#0f0f12]/70 to-[#0f0f12]" aria-hidden="true" />
+            <div className="absolute inset-x-0 bottom-0 z-[2] h-32 backdrop-blur-md [-webkit-mask-image:linear-gradient(to_top,transparent_0%,black_100%)] [mask-image:linear-gradient(to_top,transparent_0%,black_100%)] bg-[#0f0f12]/40" aria-hidden="true" />
 
           </div>
         </div>
@@ -115,6 +116,7 @@ export default function Hero() {
             </div>
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 z-[2] h-1/2 bg-gradient-to-b from-transparent via-[#0f0f12]/70 to-[#0f0f12]" aria-hidden="true" />
+            <div className="absolute inset-x-0 bottom-0 z-[2] h-32 backdrop-blur-md [-webkit-mask-image:linear-gradient(to_top,transparent_0%,black_100%)] [mask-image:linear-gradient(to_top,transparent_0%,black_100%)] bg-[#0f0f12]/40" aria-hidden="true" />
 
           </div>
         </div>
@@ -135,6 +137,7 @@ export default function Hero() {
             </div>
             <div className="absolute inset-0 z-[2] bg-gradient-to-br from-black/60 via-black/20 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 z-[2] h-1/2 bg-gradient-to-b from-transparent via-[#0f0f12]/70 to-[#0f0f12]" aria-hidden="true" />
+            <div className="absolute inset-x-0 bottom-0 z-[2] h-32 backdrop-blur-md [-webkit-mask-image:linear-gradient(to_top,transparent_0%,black_100%)] [mask-image:linear-gradient(to_top,transparent_0%,black_100%)] bg-[#0f0f12]/40" aria-hidden="true" />
 
           </div>
         </div>
