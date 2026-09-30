@@ -150,7 +150,7 @@ export default function Hero() {
               <br />
               <span className="text-primary">Infantis</span>
             </h1>
-            <p className="mb-8 max-w-[480px] text-xl font-light text-white max-sm:max-w-full max-sm:text-base">
+            <p className="mb-8 max-w-[480px] text-xl font-semibold text-white max-sm:max-w-full max-sm:text-base">
               Disciplina, Saúde e diversão para os pequenos! Aulas desenvolvidas para crianças a partir de 5 anos de idade.
             </p>
             <div className="flex flex-wrap gap-4 max-sm:w-full max-sm:flex-col max-sm:items-stretch">
@@ -171,7 +171,7 @@ export default function Hero() {
               <br />
               <span className="text-primary">Mestres</span>
             </h1>
-            <p className="mb-8 max-w-[480px] text-xl font-light text-white max-sm:max-w-full max-sm:text-base">
+            <p className="mb-8 max-w-[480px] text-xl font-semibold text-white max-sm:max-w-full max-sm:text-base">
               Supere seus limites, desenvolva sua técnica e seja parte de uma equipe vencedora.
             </p>
             <div className="flex flex-wrap gap-4 max-sm:w-full max-sm:flex-col max-sm:items-stretch">
