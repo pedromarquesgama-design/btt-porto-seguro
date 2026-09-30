@@ -182,14 +182,11 @@ export default function Hero() {
             <span data-parallax="-70" className="mb-6 inline-block will-change-transform border border-primary px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-primary">
               BTT Porto Seguro
             </span>
-            <h1 data-parallax="90" className="mb-4 will-change-transform font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.5rem,10vw,4.5rem)] md:text-[clamp(4rem,7vw,5.5rem)] xl:text-[clamp(4.5rem,6vw,6.5rem)]">
+            <h1 data-parallax="90" className="mb-8 will-change-transform font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.5rem,10vw,4.5rem)] md:text-[clamp(4rem,7vw,5.5rem)] xl:text-[clamp(4.5rem,6vw,6.5rem)]">
               Aulas
               <br />
               <span className="text-primary">Infantis</span>
             </h1>
-            <p data-parallax="-45" className="mb-8 max-w-[480px] will-change-transform text-xl font-semibold text-white max-sm:max-w-full max-sm:text-base">
-              Disciplina, Saúde e diversão para os pequenos! Aulas desenvolvidas para crianças a partir de 5 anos de idade.
-            </p>
             <div data-parallax="60" className="flex will-change-transform flex-wrap gap-4 max-sm:w-full max-sm:flex-col max-sm:items-stretch">
               <Button href="#contatos" size="lg" className="max-sm:w-full">
                 Junte-se a Nós
@@ -201,16 +198,13 @@ export default function Hero() {
           </div>
 
           <div className={`container hero-content-panel hero-content-panel--master mx-auto w-full max-w-[1200px] px-4 pt-8 pb-[13vw] ${isMaster ? 'is-active' : ''}`}>
-            <h1 data-parallax="90" className="mb-4 will-change-transform font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.25rem,8vw,4.75rem)]">
+            <h1 data-parallax="90" className="mb-8 will-change-transform font-display uppercase leading-[0.95] tracking-[0.03em] text-foreground text-[clamp(2.25rem,8vw,4.75rem)]">
               Aprenda com
               <br />
               os Melhores
               <br />
               <span className="text-primary">Mestres</span>
             </h1>
-            <p data-parallax="-45" className="mb-8 max-w-[480px] will-change-transform text-xl font-semibold text-white max-sm:max-w-full max-sm:text-base">
-              Supere seus limites, desenvolva sua técnica e seja parte de uma equipe vencedora.
-            </p>
             <div data-parallax="60" className="flex will-change-transform flex-wrap gap-4 max-sm:w-full max-sm:flex-col max-sm:items-stretch">
               <Button href="#contatos" size="lg" className="max-sm:w-full">
                 Junte-se a Nós
