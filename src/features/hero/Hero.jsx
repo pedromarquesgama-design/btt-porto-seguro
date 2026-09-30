@@ -79,9 +79,11 @@ function useHorizontalParallax(rootRef) {
     const update = () => {
       raf = 0
       const progress = Math.min(1, Math.max(0, window.scrollY / (window.innerHeight || 1)))
+      const opacity = (1 - progress).toFixed(3)
       for (const el of layers) {
         const depth = parseFloat(el.dataset.parallax) || 0
         el.style.transform = `translate3d(${(progress * depth).toFixed(2)}px, 0, 0)`
+        el.style.opacity = opacity
       }
     }
     const schedule = () => {
@@ -95,7 +97,10 @@ function useHorizontalParallax(rootRef) {
       if (raf) cancelAnimationFrame(raf)
       window.removeEventListener('scroll', schedule)
       window.removeEventListener('resize', schedule)
-      for (const el of layers) el.style.transform = ''
+      for (const el of layers) {
+        el.style.transform = ''
+        el.style.opacity = ''
+      }
     }
   }, [rootRef])
 }
