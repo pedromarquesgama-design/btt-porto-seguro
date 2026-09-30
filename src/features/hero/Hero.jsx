@@ -74,7 +74,7 @@ export default function Hero() {
   const isMaster = current === SLIDES.length - 1
 
   return (
-    <section id="home" className="relative block overflow-hidden pt-16 max-sm:pt-14" aria-label="Banner principal">
+    <section id="home" className="sticky top-0 z-0 block overflow-hidden pt-16 max-sm:pt-14" aria-label="Banner principal">
       <div
         ref={sliderRef}
         aria-live="polite"

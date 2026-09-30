@@ -1,4 +1,5 @@
 import { MASTERS } from '../../data/site.js'
+import ScrollReveal from '../../components/ui/ScrollReveal.jsx'
 
 function MasterCard({ master }) {
   const isGold = master.variant === 'gold'
@@ -70,15 +71,19 @@ export default function Tradition() {
     <section id="tradicao-metodologia" className="relative overflow-hidden bg-background-alt py-16 pb-2" aria-labelledby="tradicao-metodo-title">
       <div className="pointer-events-none absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-transparent via-primary to-gold" aria-hidden="true" />
       <div className="mx-auto w-full max-w-[1200px] px-4">
-        <h2 id="tradicao-metodo-title" className="text-center font-display text-5xl uppercase tracking-[0.05em] text-foreground max-sm:text-4xl">
-          Tradição e <span className="text-primary">Metodologia</span>
-        </h2>
-        <p className="mb-10 mt-2 text-center text-lg text-foreground-muted max-sm:text-base">
-          Quem está por trás da nossa metodologia — fundadores lendários e o professor que te ensina no dia a dia
-        </p>
+        <ScrollReveal direction="up" delay={0}>
+          <h2 id="tradicao-metodo-title" className="text-center font-display text-5xl uppercase tracking-[0.05em] text-foreground max-sm:text-4xl">
+            Tradição e <span className="text-primary">Metodologia</span>
+          </h2>
+          <p className="mb-10 mt-2 text-center text-lg text-foreground-muted max-sm:text-base">
+            Quem está por trás da nossa metodologia — fundadores lendários e o professor que te ensina no dia a dia
+          </p>
+        </ScrollReveal>
         <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-stretch gap-8 md:grid-cols-2 md:gap-10 lg:gap-12">
-          {MASTERS.map((m) => (
-            <MasterCard key={m.id} master={m} />
+          {MASTERS.map((m, i) => (
+            <ScrollReveal key={m.id} direction="up" delay={200 + i * 100}>
+              <MasterCard master={m} />
+            </ScrollReveal>
           ))}
         </div>
       </div>

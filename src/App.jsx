@@ -16,18 +16,20 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <TestimonialsMarquee />
-        <About />
-        <Tradition />
-        <Classes />
-        <Schedule />
-        <SectionDivider soft />
-        <Faq />
-        <SectionDivider />
-        <Contact />
-        <SectionDivider />
+        <div className="relative z-10 bg-background shadow-[0_-30px_60px_rgba(0,0,0,0.95)]">
+          <TestimonialsMarquee />
+          <About />
+          <Tradition />
+          <Classes />
+          <Schedule />
+          <SectionDivider soft />
+          <Faq />
+          <SectionDivider />
+          <Contact />
+          <SectionDivider />
+          <Footer />
+        </div>
       </main>
-      <Footer />
     </div>
   )
 }

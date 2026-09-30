@@ -1,4 +1,5 @@
 import { SCHEDULE_BOXE, SCHEDULE_JIUJITSU } from '../../data/site.js'
+import ScrollReveal from '../../components/ui/ScrollReveal.jsx'
 
 function ScheduleTable({ caption, rows, regionLabel }) {
   return (
@@ -38,23 +39,29 @@ export default function Schedule() {
   return (
     <section id="horarios" className="bg-background-alt py-16 pb-4 pt-2" aria-labelledby="horarios-title">
       <div className="mx-auto w-full max-w-[1200px] px-4">
-        <h2 id="horarios-title" className="text-center font-display text-5xl uppercase tracking-[0.05em] text-foreground max-sm:text-4xl">
-          Horários
-        </h2>
-        <p className="mb-10 mt-2 text-center text-lg text-foreground-muted max-sm:text-base">Calendário semanal de aulas</p>
+        <ScrollReveal direction="up" delay={0}>
+          <h2 id="horarios-title" className="text-center font-display text-5xl uppercase tracking-[0.05em] text-foreground max-sm:text-4xl">
+            Horários
+          </h2>
+          <p className="mb-10 mt-2 text-center text-lg text-foreground-muted max-sm:text-base">Calendário semanal de aulas</p>
+        </ScrollReveal>
 
         <div className="mb-10">
-          <h3 className="mb-4 flex items-center gap-3 font-display text-2xl uppercase tracking-[0.08em] text-foreground before:h-auto before:w-1 before:self-stretch before:rounded before:bg-primary">
-            Jiu-Jitsu
-          </h3>
-          <ScheduleTable caption="Horários das turmas de Jiu-Jitsu" regionLabel="Tabela de horários de Jiu-Jitsu" rows={SCHEDULE_JIUJITSU} />
+          <ScrollReveal direction="up" delay={100}>
+            <h3 className="mb-4 flex items-center gap-3 font-display text-2xl uppercase tracking-[0.08em] text-foreground before:h-auto before:w-1 before:self-stretch before:rounded before:bg-primary">
+              Jiu-Jitsu
+            </h3>
+            <ScheduleTable caption="Horários das turmas de Jiu-Jitsu" regionLabel="Tabela de horários de Jiu-Jitsu" rows={SCHEDULE_JIUJITSU} />
+          </ScrollReveal>
         </div>
 
         <div>
-          <h3 className="mb-4 flex items-center gap-3 font-display text-2xl uppercase tracking-[0.08em] text-foreground before:h-auto before:w-1 before:self-stretch before:rounded before:bg-primary">
-            Boxe
-          </h3>
-          <ScheduleTable caption="Horários das turmas de Boxe" regionLabel="Tabela de horários de Boxe" rows={SCHEDULE_BOXE} />
+          <ScrollReveal direction="up" delay={200}>
+            <h3 className="mb-4 flex items-center gap-3 font-display text-2xl uppercase tracking-[0.08em] text-foreground before:h-auto before:w-1 before:self-stretch before:rounded before:bg-primary">
+              Boxe
+            </h3>
+            <ScheduleTable caption="Horários das turmas de Boxe" regionLabel="Tabela de horários de Boxe" rows={SCHEDULE_BOXE} />
+          </ScrollReveal>
         </div>
       </div>
     </section>

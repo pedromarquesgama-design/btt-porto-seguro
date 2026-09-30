@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CONTACT } from '../../data/site.js'
+import ScrollReveal from '../../components/ui/ScrollReveal.jsx'
 
 function Field({ id, label, ...props }) {
   return (
@@ -43,12 +44,15 @@ export default function Contact() {
     <section id="contatos" className="relative overflow-hidden bg-background-alt py-16" aria-labelledby="contatos-title">
       <div className="pointer-events-none absolute -bottom-[30%] -left-[10%] h-[80%] w-1/2 bg-[radial-gradient(ellipse,rgba(220,38,38,0.12)_0%,transparent_70%)]" aria-hidden="true" />
       <div className="mx-auto w-full max-w-[1200px] px-4">
-        <h2 id="contatos-title" className="text-center font-display text-5xl uppercase tracking-[0.05em] text-foreground max-sm:text-4xl">
-          Contatos
-        </h2>
-        <p className="mb-10 mt-2 text-center text-lg text-foreground-muted max-sm:text-base">Fale conosco ou venha nos visitar</p>
+        <ScrollReveal direction="up" delay={0}>
+          <h2 id="contatos-title" className="text-center font-display text-5xl uppercase tracking-[0.05em] text-foreground max-sm:text-4xl">
+            Contatos
+          </h2>
+          <p className="mb-10 mt-2 text-center text-lg text-foreground-muted max-sm:text-base">Fale conosco ou venha nos visitar</p>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+          <ScrollReveal direction="up" delay={100}>
           <div className="flex flex-col gap-6">
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-border bg-surface max-sm:h-10 max-sm:w-10" aria-hidden="true">
@@ -133,7 +137,9 @@ export default function Contact() {
               Como chegar no Google Maps →
             </a>
           </div>
+          </ScrollReveal>
 
+          <ScrollReveal direction="up" delay={200}>
           <div className="rounded-lg border border-border bg-surface p-8 max-sm:p-6" aria-label="Formulário de contato">
             <h3 className="mb-6 font-display text-2xl uppercase tracking-[0.05em]">Envie sua mensagem</h3>
             <form onSubmit={onSubmit} noValidate>
@@ -182,6 +188,7 @@ export default function Contact() {
               </div>
             )}
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
