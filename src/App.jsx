@@ -16,8 +16,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <div className="relative z-10 bg-background shadow-[0_-30px_60px_rgba(0,0,0,0.95)]">
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-transparent via-background/80 to-background z-20" aria-hidden="true" />
+        <div className="relative z-10 bg-background pt-8 shadow-[0_-30px_60px_rgba(0,0,0,0.95)]">
           <TestimonialsMarquee />
           <About />
           <Tradition />
