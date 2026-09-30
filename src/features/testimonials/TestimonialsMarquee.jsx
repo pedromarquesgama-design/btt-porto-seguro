@@ -122,8 +122,6 @@ export default function TestimonialsMarquee() {
 
   return (
     <section className="relative z-[3] -mt-16 bg-transparent pb-6 pt-24 sm:-mt-20 sm:pt-28 text-foreground sm:pb-8" aria-label="Depoimentos de alunos">
-      {/* Top glowing gradient border light effect */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-20 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_15px_rgba(220,38,38,0.8)]" aria-hidden="true" />
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <div
           ref={viewportRef}
